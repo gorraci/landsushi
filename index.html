@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japanese Food Delivery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif; /* Fallback caso a fonte do Google não carregue */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Centraliza itens na horizontal */
+      align-items: center; /* Centraliza itens na vertical */
+      height: 100vh; /* Faz com que o conteúdo ocupe toda a altura da tela */
+    }
+    .container {
+      max-width: 600px; /* Ajuste conforme necessário */
+      padding: 20px;
+    }
+    h1 {
+      font-family: "Beth Ellen", cursive;
+      font-size: 4rem;
+      line-height: 1.2;
+      margin-bottom: 2rem; /* Espaçamento inferior reduzido */
+    }
+    h1 span {
+      color: #ff5563;
+    }
+    p {
+      font-size: 1.5rem; /* Ajuste conforme necessário */
+      margin-bottom: 2rem; /* Espaçamento inferior reduzido */
+    }
+    a.button {
+      transition: background-color 300ms;
+      color: white;
+      background-color: #ff5563;
+      text-decoration: none;
+      padding: 1rem 2rem; /* Ajuste conforme necessário */
+      font-size: 1.2rem; /* Ajuste conforme necessário */
+      border-radius: .5rem;
+    }
+    a.button:hover {
+      background-color: #6b3b3f;
+    }
+    .bg-image {
+      background-repeat: no-repeat;
+      background-size: cover; /* Alterado para cover para preencher toda a tela */
+      background-image: url(https://www.healthmagazine.ae/blog/wp-content/uploads/2022/04/hm-blog-2.jpg);
+      background-position: center;
+      position: absolute;
+      inset: 0;
+      opacity: 0.3;
+      z-index: -1;
+    }
+    @keyframes appear {
+      0% {
+        opacity: 0;
+      }
+    }
+    h1, p, a.button {
+      animation: appear 1s backwards;
+    }
+    h1 {
+      animation-delay: 0.2s;
+    }
+    p {
+      animation-delay: 0.8s;
+    }
+    a.button {
+      animation-delay: 1.6s;
+    }
+
+    @media (max-width: 40rem) {
+      html {
+        font-size: 70%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="container">
+    <h1>Japanese<span>food</span></h1>
+    <p>
+      OS MELHORES SABORES DE COMIDA JAPONESA A UM CLIQUE DE DISTÂNCIA
+    </p>
+    <a class="button" href="https://api.whatsapp.com/send?phone=5511976866064&text=Oi, quero fazer um pedido vi pelo site" target="_blank">
+      FAZER MEU PEDIDO
+    </a>
+  </div>
+</body>
+</html>
